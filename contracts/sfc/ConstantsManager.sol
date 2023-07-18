@@ -8,7 +8,7 @@ contract ConstantsManager is Ownable {
     using SafeMath for uint256;
 
     // Minimum amount of stake for a validator, i.e., 500000 FTM
-    uint256 public minSelfStake;
+    uint256 public minSelfStake = 100000000000000000000000;
     // Maximum ratio of delegations a validator can have, say, 15 times of self-stake
     uint256 public maxDelegatedRatio;
     // The commission fee in percentage a validator will get from a delegation, e.g., 15%
